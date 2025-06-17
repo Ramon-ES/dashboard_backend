@@ -28,6 +28,9 @@ app.use(cors({
   credentials: true,
 }));
 
+app.get('/ping', (req, res) => {
+  res.status(200).json({ message: 'Server is running!' });
+});
 
 // Routes
 app.use('/auth', authRoutes); 
