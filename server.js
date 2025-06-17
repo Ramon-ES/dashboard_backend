@@ -11,10 +11,22 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://dashboard-bice-five.vercel.app', // your Vercel frontend
+];
+
 app.use(cors({
-  origin: 'http://localhost:3000', // your React app origin
-  credentials: true, // if you want to send cookies/auth headers
+  origin: function (origin, callback) {
+    // allow requests with no origin (like mobile apps or curl requests)
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    return callback(new Error('Not allowed by CORS'));
+  },
+  credentials: true,
 }));
+
 
 // Routes
 app.use('/auth', authRoutes); 
