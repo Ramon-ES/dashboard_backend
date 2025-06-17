@@ -14,6 +14,7 @@ app.use(express.json());
 const allowedOrigins = [
   'http://localhost:3000',
   'https://dashboard-bice-five.vercel.app', // your Vercel frontend
+  'https://www.dashboard-bice-five.vercel.app', // your Vercel frontend
 ];
 
 app.use(cors({
