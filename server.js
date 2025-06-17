@@ -39,6 +39,6 @@ app.use('/client', clientFetchRouter);
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {
   console.log('✅ Connected to MongoDB');
-  app.listen(5000, () => console.log('🚀 Server running at http://localhost:5000'));
+  app.listen(3002, () => console.log('🚀 Server running at http://localhost:3002'));
 })
 .catch(err => console.error('❌ MongoDB connection failed:', err));
