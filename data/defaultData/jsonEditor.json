@@ -1,0 +1,76 @@
+{
+	"conversationContext": {
+		"context": [
+			{
+				"conversationContext": {
+					"type": "textarea",
+					"label": "Conversation context",
+					"placeholder": "Give some more context for this specific conversation",
+					"required": true,
+					"value": ""
+				}
+			}
+		]
+	},
+	"conversationGoal": {
+		"goal": [
+			{
+				"conversationGoal": {
+					"type": "textarea",
+					"label": "Conversation goal",
+					"placeholder": "Describe what you want to achieve with this conversation",
+					"required": true,
+					"value": ""
+				}
+			}
+		]
+	},
+	"behaviour": {
+		"behaviour": [
+			{
+				"conversationBehaviour": {
+					"type": "textarea",
+					"label": "Conversation specific behaviour",
+					"placeholder": "Describe the characters behaviour for this specific conversation",
+					"required": true,
+					"value": ""
+				}
+			}
+		]
+	},
+	"prompting": {
+		"initialPrompt": [
+			{
+				"initialPrompt": {
+					"type": "textarea",
+					"label": "Initial Prompt",
+					"placeholder": "Write the initial prompt",
+					"required": true,
+					"value": ""
+				}
+			}
+		]
+	},
+	"conversationStarter": {
+		"AI": [
+			{
+				"english": {
+					"type": "textarea",
+					"label": "Conversation starter - English",
+					"placeholder": "Write the conversation starter in English",
+					"required": true,
+					"value": ""
+				},
+				"dutch": {
+					"type": "textarea",
+					"label": "Conversation starter - Dutch",
+					"placeholder": "Write the conversation starter in Dutch",
+					"required": true,
+					"value": ""
+				}
+			}
+		]
+	},
+	"deletable": true,
+	"updatedAt": "2025-06-17T11:04:39.147Z"
+}
